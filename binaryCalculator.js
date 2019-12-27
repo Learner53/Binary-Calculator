@@ -47,6 +47,9 @@ document.getElementById("btnEql").addEventListener('click',function(){
 		b=parseInt(s, 10).toString(2);
 
 	}
+	if(!a.includes("+") && !a.includes("-") && !a.includes("*") && !a.includes("/")){
+		b=a;
+	}
 	document.getElementById('res').innerHTML=b;
 
 });
